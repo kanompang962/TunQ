@@ -1,0 +1,113 @@
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 196, 196);
+
+    .container {
+
+        .container-warp {
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            padding: 100px 60px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+
+            .icon {
+                font-size: 80px;
+            }
+        
+            .title {
+                font-size: 28px;
+                font-weight: 500;
+                text-align: center;
+                line-height: 30px;
+        
+                span {
+                    font-weight: 600;
+                    color: rgb(73, 206, 73);
+                }
+            }
+        
+            .group-input {
+                margin: 20px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .text-input {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 10px;
+                    background: #eeeded;
+                    border-radius: 4px;
+
+                    input {
+                        background: transparent;
+                        width: 100%;
+                        font-size: 14px;
+                        font-family: 'Kanit', sans-serif;
+                        padding: 10px;
+                        outline: none;
+                        border: none;
+                        color: rgb(52, 53, 52);
+                    }
+
+                    .icon-user, .icon-password {
+                        color: #bbbaba;
+                    }
+                }
+            }
+        
+            .group-btn {
+                margin-bottom: 200px;
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    font-size: 14px;
+                    font-family: 'Kanit', sans-serif;
+                    color: #fff;
+                    padding: 6px 26px;
+                    border-radius: 4px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-device-width: 48em) {
+    .container {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .container-warp {
+            padding: 0 60px !important;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .container {
+        width: 60%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+        .container-warp {
+
+            .group-btn {
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+}
+
